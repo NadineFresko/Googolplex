@@ -1,0 +1,32 @@
+.logo{
+    width: 25px;
+    border: none;
+    margin-right: 0;
+    display: inline;
+}
+
+a{
+    color: green;
+}
+img{
+    display: inline;
+    width: 400px;
+    margin-right: 0;
+}
+
+
+#pround{
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+/* **************************** Map **************************** */
+.councle:hover #3kensington{
+    fill: #ec008c;
+    opacity: 1;
+}
