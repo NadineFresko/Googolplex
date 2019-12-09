@@ -27,7 +27,6 @@ img{
 
 
 /* **************************** Map **************************** */
-.councle:hover #3kensington{
+#harrow:hover {
     fill: #ec008c;
-    opacity: 1;
 }
