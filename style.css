@@ -1,32 +1,30 @@
 
 .logo{
-    width: 25px;
-    border: none;
-    margin-right: 0;
-    display: inline;
+  width: 25px;
+  border: none;
+  margin-right: 0;
+  display: inline;
 }
 
-a{
-    color: green;
+#section{
+  display: block;
 }
 img{
-    display: inline;
-    width: 400px;
-    margin-right: 0;
+  display: inline;
+  width: 400px;
+  margin-right: 0;
 }
-
+body{
+  flex-flow: column;
+}
 
 #pround{
-    font-weight: 700;
+  font-weight: 700;
 }
-
-
-
-
 
 
 
 /* **************************** Map **************************** */
-#harrow:hover {
-    fill: #ec008c;
+.council:hover {
+  fill: #ec008c;
 }
