@@ -1,0 +1,68 @@
+#maindboard{
+    width: 700px;
+    height: 450px;
+    border: black solid 3px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    
+}
+.wastes{
+    display: flex;
+    justify-content: space-around;
+}
+.waste {
+    margin: 0;
+    padding:0;
+    width: 100px;
+    height: 120px;
+    cursor:pointer;
+} 
+
+.bins{
+    display: flex;
+    justify-content: space-around;
+}
+.bin{
+    margin: 20px;
+    padding:0;
+    width: 150px;
+    height: 250px;
+}
+#recycle{
+    fill: rgb(96, 177, 107);
+}
+
+
+/*          dragging        */
+
+.bin.bin-hover{
+    transform: scale(1.1);
+    rotate the lid
+}
+
+
+/*         hover             */
+
+
+.bin.open .binLid {
+    transform: rotateZ(-30deg);
+
+}
+.bin.close .binLid {
+    transform: rotateZ(0deg);
+
+}
+
+.bin.dropped img{
+
+}
+
+.waste.dragged{
+    
+}
+
+
+/* .bin.wrong-hover{
+    !!!!move away!!!!
+} */
