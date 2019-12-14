@@ -1,68 +1,64 @@
-#maindboard{
-    width: 700px;
-    height:500px;
-    border: black solid 3px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    
+#maindboard {
+  width: 100%;
+  height: 600px;
+  border: black solid 3px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
 }
-.wastes{
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
+.wastes {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
 }
 .waste {
-    margin: 10px;
-    padding:0;
-    width: 100px;
-    height: 120px;
-    cursor:pointer;
-} 
+  margin: 10px;
+  padding: 0;
+  width: 100px;
+  height: 120px;
+  cursor: pointer;
+  border: none;
+}
+.bins {
+  display: flex;
+  justify-content: space-around;
+}
+.bin {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 250px;
+}
+.toothpaste {
+  display: flex;
+  flex-flow: column;
+}
 
-.bins{
-    display: flex;
-    justify-content: space-around;
+h4 {
+  margin: 0 auto;
+  padding: 0;
 }
-.bin{
-    margin: 20px;
-    padding:0;
-    width: 150px;
-    height: 250px;
+.aroundBin-wrong {
 }
-#recycle{
-    fill: rgb(96, 177, 107);
+#recycle {
+  fill: rgb(96, 177, 107);
 }
-
 
 /*          dragging        */
 
-.bin.bin-hover{
-    transform: scale(1.1);
-    rotate the lid
+.bin-hover {
+  transform: scale(1.1);
+  /* rotate the lid */
 }
-
 
 /*         hover             */
 
-
 .bin.open .binLid {
-    transform: rotateZ(-30deg);
-
+  transform: rotateZ(-30deg);
 }
-.bin.close .binLid {
-    transform: rotateZ(0deg);
-
+.bin .binLid {
+  transform: rotateZ(0deg);
 }
-
-.bin.dropped img{
-
-}
-
-.waste.dragged{
-    
-}
-
 
 /* .bin.wrong-hover{
     !!!!move away!!!!
