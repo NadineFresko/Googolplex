@@ -12,17 +12,21 @@
     <div id="maindboard">
         <!-- drag items -->
         <div class="wastes">
-            <img id="can" class="waste recyclable" draggable='true' ondragstart='dragStart(event);' src="imgs/can.png" alt="">
-            <img id="beercan" class="waste recyclable" draggable='true' ondragstart='dragStart(event);' src="imgs/beercan.png" alt="">
-            <img id="coffee" class="waste recyclable" draggable='true' ondragstart='dragStart(event);' src="imgs/coffee.png" alt="">
-            <img id="bottle" class="waste recyclable" draggable='true' ondragstart='dragStart(event);' src="imgs/bottle.png" alt="">
-            <img id="bag" class="waste general" draggable='true' ondragstart='dragStart(event);' src="imgs/bag.png" alt="">
+            <img id="beercan" class="waste recyclable" draggable='true' ondragover='dragOver(event);' ondragstart='recycleStart(event);' src="imgs/beercan.png" alt="">
+            <img id="coffee" class="waste recyclable" draggable='true' ondragover='dragOver(event);' ondragstart='recycleStart(event);' src="imgs/coffee.png" alt="">
+            <img id="bottle" class="waste recyclable" draggable='true' ondragover='dragOver(event);' ondragstart='recycleStart(event);' src="imgs/bottle.png" alt="">
+            <img id="paper" class="waste recyclable" draggable="true" ondragover="dragOver(event);" ondragstart="recycleStart(event);" src="https://image.flaticon.com/icons/png/512/29/29963.png" alt="">
+            <!-- <img id="" class="waste " draggable="true" ondragover="dragOver(event);" ondragstart="dragStart(event);" src="" alt="">
+            <img id="" class="waste " draggable="true" ondragover="dragOver(event);" ondragstart="dragStart(event);" src="" alt=""> -->
+            <img id="toothpaste" class="waste general" draggable="true" ondragover="dragOver(event);" ondragstart="binStart(event);" src="https://image.flaticon.com/icons/png/512/1152/1152516.png" alt="">
+            <img id="nappy" class="waste general" draggable="true" ondragover="dragOver(event);" ondragstart="binStart(event);" src="https://image.flaticon.com/icons/png/512/794/794568.png" alt="nappy">
+            <img id="bag" class="waste general" draggable='true' ondragover='dragOver(event);' ondragstart='binStart(event);' src="imgs/bag.png" alt="">
         </div>
 
         <!-- drop zone -->
         <div class="bins">
 
-            <svg id="recycle" class="bin recyclable" ondragover='dragOver(event);' ondrop='onDrop(event);' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+            <svg id="recycle" class="bin recycleB" ondragover='dragOver(event);' ondrop='recycling(event);' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
                 <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
                 <g><g><g>
 
@@ -35,7 +39,7 @@
                 <path d="M489.3,905.9c-10.3,0-18.6-8.4-18.6-18.6V339.8c0-10.3,8.3-18.6,18.6-18.6c10.3,0,18.6,8.4,18.6,18.6v547.4C507.9,897.5,499.6,905.9,489.3,905.9z"/></g
                 ><g></g><g></g></g>
             </svg>
-            <svg id="general" class="bin norecycle" ondragover='dragOver(event);' ondrop='onDrop(event);' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+            <svg id="general" class="bin generalB" ondragover='dragOver(event);' ondrop='recycling(event);' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
                 <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
                 <g><g><g>
                 <g>
@@ -52,6 +56,7 @@
         </div>
 
     </div>
+    <script   src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="   crossorigin="anonymous"></script>
     <script src="game.js"></script>
 
 </body>

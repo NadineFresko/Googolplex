@@ -1,19 +1,32 @@
-const recyclable = document.querySelectorAll(".recyclable")
-const general = document.querySelectorAll(".general")
-const bins = document.querySelectorAll(".bin");
+let recyclable = document.querySelectorAll(".recyclable")
+let general = document.querySelectorAll(".general")
+
+const recycleBin = document.querySelectorAll(".recycleB");
+const generalBin = document.querySelector(".generalB");
+let bins = document.querySelectorAll(".bin")
+let dragged;
+let binned;
+
+// $(".recyclable").onDrop((".recycleB"), document.classList.add(".open"))
+
+// recycleBin.forEach(elem =>{
+//     elem.addEventListener("dragenter", dragEnter); // Fires when a dragged item enters a valid drop target
+//     elem.addEventListener("dragover", dragOver); // Fires when a dragged item is being dragged over a valid drop target, repeatedly while the draggable item is within the drop zone
+//     elem.addEventListener("dragleave", dragLeave); // Fires when a dragged item leaves a valid drop target
+//     elem.addEventListener("drop", recycling); // Fires when an item is dropped on a valid drop target
+// });
+
+// generalBin.forEach(elem =>{
+//     elem.addEventListener("dragenter", dragEnter); // Fires when a dragged item enters a valid drop target
+//     elem.addEventListener("dragover", dragOver); // Fires when a dragged item is being dragged over a valid drop target, repeatedly while the draggable item is within the drop zone
+//     elem.addEventListener("dragleave", dragLeave); // Fires when a dragged item leaves a valid drop target
+//     elem.addEventListener("drop", recycling); // Fires when an item is dropped on a valid drop target
+// });
 
 
-bins.forEach(elem =>{
-    elem.addEventListener("dragenter", dragEnter); // Fires when a dragged item enters a valid drop target
-    elem.addEventListener("dragover", dragOver); // Fires when a dragged item is being dragged over a valid drop target, repeatedly while the draggable item is within the drop zone
-    elem.addEventListener("dragleave", dragLeave); // Fires when a dragged item leaves a valid drop target
-    elem.addEventListener("drop", onDrop); // Fires when an item is dropped on a valid drop target
-});
 
-
-function dragStart(event){
-    event.dataTransfer.setData('text/plain', event.target.id);
-    console.log("drag is moving!")
+function recycleStart(event){
+    dragged = event.target;
 };
 function dragEnter(event){
     if(event.target.classList.contains("close")){
@@ -21,32 +34,76 @@ function dragEnter(event){
     }
     event.target.classList.add("open");
     event.target.classList.add("bin-hover");
-    
 };
 function dragOver(event){
     event.preventDefault();
 }
 function dragLeave(event){
-    // if(!event.target.classList.contains("open")) {
-        //   }
     event.target.classList.remove("bin-hover");
     event.target.classList.remove("open");
     event.target.classList.add("close");
 };
+// document.addEventListener("dragenter", function(evnet){
+// })
 
 
-function onDrop(event){
-    console.log("Something has dropped!!!");
+function recycling(event){
     event.preventDefault();
-    event.target.classList.remove("open");
-    event.target.classList.add("close");
-    console.log(document.getElementById("recycle").classList); 
-    const data = event.dataTransfer.getData('text');
-    const bin = event.target;
+    if(dragged.classList.contains("recyclable") && event.target.classList.contains("recycleB")){
+        // even
+        dragged.remove();
+    }
+    // else if(binned)
+        
+        event.target.classList.remove("open");
+        event.target.classList.add("close");
+        const data = event.dataTransfer.getData('text');
+        
+        
+        event.dataTransfer.clearData;  //*************** */
+    }
+        // dataTransfer.getData <= what data? can i get 
+        // use attribute
+   
+    // event.target.appendChild(document.getElementById(data));
 
-    // bin.appendChild(draggableElement);
+
+function binning(event){
+    event.preventDefault();
+    if(binned.classList.contains("general")){
+        binned.remove()
+        event.target.classList.remove("open");
+        event.target.classList.add("close");
+        const data = event.dataTransfer.getData('text');
+        
+        
+        event.dataTransfer.clearData;  //*************** */
+    }
+        // dataTransfer.getData <= what data? can i get 
+        // use attribute
+   
+    // event.target.appendChild(document.getElementById(data));
     
-    // event.dataTransfer.clearData;
-    event.target.appendChild(document.getElementById(data));
-    // event.target.classList.add("lidClose");
 };
+
+
+
+
+
+// function recycling(event){
+//     if (bins.classList.contains("recyclable"){
+//         recyclable.onDrop();
+//     })
+
+
+// }
+
+//=========================
+
+//   if the waste classList contains recyclable 
+// &&  if the bins classList contains recyclable the allow hover
+//    else close, hover = None, mouse pointer = none
+
+//==========================
+
+//  
