@@ -53,7 +53,9 @@ function recycling(event){
         // even
         dragged.remove();
     }
-    // else if(binned)
+    else if(dragged.classList.contains("general") && event.target.classList.contains("generalB")){
+        dragged.remove();
+    }
         
         event.target.classList.remove("open");
         event.target.classList.add("close");
