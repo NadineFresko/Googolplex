@@ -34,14 +34,21 @@
       </div>
     </div>
   </nav>
-
+  
 </header>
 <div  id="section" class="paper fixed container margin-top-large">
   <section >
-    <h1> Can you recycle? </h1>
-    <h3>give it a try!</h3>
-
-    <div id="maindboard">
+    <div id="modal" class="modal">
+      <label class="modal-bg" for="modal-1"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-1">dfsdf</label>
+        <img src="imgs/meme1.jpeg" alt="">
+      </div>
+    </div>
+    <h1 class="center" style="margin: 0;"> Can you recycle? </h1>
+    <h2 class="center" >give it a try!</h2>
+    
+    <div id="maindboard" class="margin-bottom-large">
         <!-- drag items -->
         <div class="wastes">
             <img id="beercan" class="waste recyclable" draggable='true'  ondragstart='recycleStart(event);' src="https://image.flaticon.com/icons/png/512/95/95982.png" alt="">
@@ -72,7 +79,7 @@
                 </svg>
                 <h4>&#60;Recycle bin&#62;</h4>
             </div>
-            <div class="aroundBin">
+            <div class="around">
                 <svg id="general" class="bin generalB" ondragover='dragOver(event);' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
                     <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
                     <g><g><g>
@@ -90,14 +97,18 @@
             </div>
             
           </div>
-          <button class="btn-success" onClick="window.location.href=window.location.href"><img class="reload" src="imgs/logo.png" alt="Refresh"><br>&#60; Refresh &#62;</button>
         
     </div>
+    <h3 class="margin-bottom-small paddi:ng-bottom-large" style="display: inline;">To refresh : </h3>
+    <button id="refresh" class="btn-success" onClick="window.location.href=window.location.href"><img class="refreshImg" src="imgs/logo.png" alt="Refresh"></button>
 
-<div>
-<h1>Why?????</h1>
-  <a href="https://www.brysonrecycling.org/recycling/">Why recycle</a>
-  <img src="imgs/meme1.jpeg" alt="">
+<br>
+<div class="row flex-center"> 
+  <h1 class="col-10">Watch This!</h1>
+    <iframe class="col-10" title="vimeo-player" src="https://player.vimeo.com/video/286554060" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+<!-- <h1>Why?????</h1> -->
+  <!-- <a href="https://www.brysonrecycling.org/recycling/">Why recycle</a> -->
+  <!-- <img src="imgs/meme1.jpeg" alt=""> -->
 </div>
   </section>
 </div>
@@ -106,11 +117,9 @@
 
 <footer></footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/3abf9835a4.js" crossorigin="anonymous"></script>
-
+<script src="game.js"></script>
 <script src="main.js"></script>
+
 
 
 </body>

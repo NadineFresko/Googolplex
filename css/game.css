@@ -7,11 +7,15 @@
   justify-content: space-around;
   background-color: ;
 }
-.reload {
-  padding: 0;
+.refreshImg {
+  padding: 3px;
   margin: 0;
-  width: 100px;
+  width: 50px;
   border: none;
+}
+#refresh {
+  margin: 0;
+  padding: 0;
 }
 .wastes {
   display: flex;
@@ -41,9 +45,8 @@
   flex-flow: column;
 }
 
-h4 {
-  margin: 0 auto;
-  padding: 0;
+h3 {
+  margin: 0 0 0 73%;
 }
 .aroundBin-wrong {
 }
