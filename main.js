@@ -10,6 +10,8 @@ function recycleStart(event) {
   dragged = event.target;
 }
 function dragEnter(event) {
+  event.preventDefault;
+  event.stopPropagation();
   if (
     (dragged.classList.contains("recyclable") &&
       event.currentTarget.classList.contains("recycleB")) ||
@@ -18,12 +20,9 @@ function dragEnter(event) {
   ) {
     event.currentTarget.classList.add("bin-hover");
     event.currentTarget.classList.add("open");
-    // event.currentTarget.classList.removes("close");
   } else {
-    alert(
-      (URL =
-        "https://starecat.com/content/wp-content/uploads/can-i-have-a-plastic-bag-please-its-already-inside-buying-fish.jpg")
-    );
+    // event.stopPropagation();
+    console.log("printingggggggggggggggggggggggggggg and stilllllllllllll");
   }
 }
 
@@ -33,7 +32,6 @@ function dragOver(event) {
 function dragLeave(event) {
   event.target.classList.remove("bin-hover");
   event.target.classList.remove("open");
-  //   event.target.classList.add("close");
 }
 function onDrop(event) {
   console.log("ondrop called!");
@@ -42,7 +40,6 @@ function onDrop(event) {
   event.currentTarget.classList.remove("open");
   console.log(event.target);
   recycling(event);
-  //   event.target.classList.add("close");
 }
 function initialiseBin() {
   [recycleBin, generalBin].forEach(lid => {
@@ -68,24 +65,10 @@ function recycling(event) {
   ) {
     dragged.remove();
     initialiseBin();
-    // const data = event.dataTransfer.getData('text');
-    // } else {
-    //     alert(":)...Try again")
   }
   event.dataTransfer.clearData; //*************** */
 }
 
 /*=============================================
-                    MOVE AWAY
+                  MOVE AWAY
 ==============================================*/
-
-// function wrongEnter (event){
-//     if (!
-//         (dragged.classList.contains("recyclable") &&
-//           event.currentTarget.classList.contains("recycleB")) ||
-//         (dragged.classList.contains("general") &&
-//           event.currentTarget.classList.contains("generalB"))
-//       ) {
-//         event.currentTarget.classList.add();
-
-// }

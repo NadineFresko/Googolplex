@@ -5,6 +5,13 @@
   display: flex;
   flex-flow: column;
   justify-content: space-around;
+  background-color: ;
+}
+.reload {
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  border: none;
 }
 .wastes {
   display: flex;
