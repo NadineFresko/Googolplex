@@ -31,9 +31,7 @@
   cursor: grab;
   border: none;
 }
-.waste .dragging {
-  cursor: grabbing;
-}
+
 .bins {
   display: flex;
   justify-content: space-around;
