@@ -89,7 +89,7 @@ function wrong() {
 
 window.onload = function() {
   // find the element that you want to drag.
-  var box = document.getElementById("maindboard");
+  var box = document.querySelectorAll(".waste");
 
   /* listen to the touchMove event,
   every time it fires, grab the location
