@@ -1,9 +1,21 @@
 body {
   flex-flow: column;
-  background-image: url(img/green.png);
-  background-size: cover;
+  padding: 0;
 }
-
+#blank {
+  background-color: red;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+}
+#divCover {
+  background-color: blue;
+  height: 100px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  margin: 0;
+}
 .logo {
   width: 25px;
   border: none;
@@ -42,6 +54,12 @@ label {
   margin: 10%;
 }
 
+#howTo div {
+  /* border: 1px solid black; */
+}
+#howTo div img {
+  border: none;
+}
 /*========================================
                 contact
 ========================================*/
