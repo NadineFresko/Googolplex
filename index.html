@@ -12,8 +12,6 @@
 </head>
 
 <body>
-  <div id="blank"></div>
-<div id="divCover" >
 
   <nav class="border fixed background-success container margin-top-small">
     <div class="nav-brand">
@@ -38,23 +36,29 @@
       </div>
     </div>
   </nav>
-</div>
+
 
 </header>
 <div  id="section" class="paper fixed container margin-top-large">
   <section class="fixed">
 
+<!-- ===================================================
+                    modal
+=================================================== -->
+
     <div id="modal" class="modal">
       <label class="modal-bg" for="modal-1"></label>
       <div class="modal-body">
-        <label class="btn-close" for="modal-1">dfsdf</label>
+        <label class="btn-close" for="modal-1">YOU COULD DO BETTER..</label>
         <img src="imgs/meme1.jpeg" alt="">
       </div>
     </div>
-    <h1 class="center" style="margin: 0;"> Can you recycle? <br>give it a try! </h1><br><br>
-    <h3>Drag and drop the items into the correct bin.</h3>
 
-    <div id="maindboard" class="margin-bottom-large">
+
+    <h1 class="center" style="margin: 0;"> Can you recycle? <br>give it a try! </h1><br><br>
+    <h3 style="display: block;">Drag and drop the items into the correct bin.</h3>
+
+    <div id="maindboard" class="margin-bottom-large row">
         <!-- drag items -->
         <div class="wastes">
             <img id="beercan" class="waste recyclable" draggable='true'  ondragstart='recycleStart(event);' src="https://image.flaticon.com/icons/png/512/95/95982.png" alt="">
@@ -68,7 +72,7 @@
 
         <!-- drop zone -->
         <div class="bins">
-            <div class="aroundBin">
+            <div class="aroundBin ">
 
                 <svg id="recycle" class="bin recycleB" ondragover='dragOver(event);' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
                     <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
@@ -83,7 +87,7 @@
                     <path d="M489.3,905.9c-10.3,0-18.6-8.4-18.6-18.6V339.8c0-10.3,8.3-18.6,18.6-18.6c10.3,0,18.6,8.4,18.6,18.6v547.4C507.9,897.5,499.6,905.9,489.3,905.9z"/></g
                     ><g></g><g></g></g>
                 </svg>
-                <h4>&#60;Recycle bin&#62;</h4>
+                <h4 style="margin: 0;">&#60;Recycle bin&#62;</h4>
             </div>
             <div class="around">
                 <svg id="general" class="bin generalB" ondragover='dragOver(event);' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -99,13 +103,13 @@
                     <path d="M489.3,905.9c-10.3,0-18.6-8.4-18.6-18.6V339.8c0-10.3,8.3-18.6,18.6-18.6c10.3,0,18.6,8.4,18.6,18.6v547.4C507.9,897.5,499.6,905.9,489.3,905.9z"/></g
                     ><g></g><g></g></g>
                 </svg>
-                <h4>&#60;General bin&#62;</h4>
+                <h4 style="margin: 0;">&#60;General bin&#62;</h4>
             </div>
 
           </div>
 
     </div>
-    <h3 class="margin-bottom-small paddi:ng-bottom-large" style="display: inline;">To refresh : </h3>
+    <h3 id="reload" class="margin-bottom-small paddi:ng-bottom-large" style="display: inline;">To refresh : </h3>
     <button id="refresh" class="btn-success" onClick="window.location.href=window.location.href"><img class="refreshImg" src="imgs/logo.png" alt="Refresh"></button>
 
 <br>
@@ -114,7 +118,6 @@
     <iframe class="col-10" title="vimeo-player" src="https://player.vimeo.com/video/286554060" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 <!-- <h1>Why?????</h1> -->
   <!-- <a href="https://www.brysonrecycling.org/recycling/">Why recycle</a> -->
-  <!-- <img src="imgs/meme1.jpeg" alt=""> -->
 </div>
   </section>
 </div>
