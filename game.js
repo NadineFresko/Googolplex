@@ -1,3 +1,9 @@
+/*=================================================
+
+                WARNING DRY CODE!!
+
+=================================================*/
+
 let recyclable = document.querySelectorAll(".recyclable");
 let general = document.querySelectorAll(".general");
 
@@ -13,9 +19,9 @@ function recycleStart(event) {
 function dragEnter(event) {
   if (
     (dragged.classList.contains("recyclable") &&
-    event.currentTarget.classList.contains("recycleB")) ||
+      event.currentTarget.classList.contains("recycleB")) ||
     (dragged.classList.contains("general") &&
-    event.currentTarget.classList.contains("generalB"))
+      event.currentTarget.classList.contains("generalB"))
   ) {
     event.currentTarget.classList.add("bin-hover");
     event.currentTarget.classList.add("open");
@@ -84,7 +90,7 @@ function wrong() {
 }
 
 /*=============================================
-MOBILE FRIENDLY
+      MODAL 
 ==============================================*/
 
 var disasters = new Array(
