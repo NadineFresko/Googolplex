@@ -70,7 +70,7 @@ function recycling(event) {
 }
 
 /*=============================================
-                  MODAL 
+MODAL
 ==============================================*/
 
 function check() {
@@ -84,33 +84,21 @@ function wrong() {
 }
 
 /*=============================================
-               MOBILE FRIENDLY 
+MOBILE FRIENDLY
 ==============================================*/
 
-window.onload = function() {
-  // find the element that you want to drag.
-  var box = document.querySelectorAll(".waste");
+var disasters = new Array(
+  "https://generalrecyclingadviceandawareness.files.wordpress.com/2018/05/5e94faab-4b8a-4e87-a4ed-8cf62494c377.jpeg?w=1100",
+  "https://steemitimages.com/640x0/https://i.imgur.com/8hHWgQX.jpg",
+  "https://recyclinginternational.com/wp-content/uploads/2018/10/Landfill-stats.jpeg",
+  "https://recyclinginternational.com/wp-content/uploads/2018/10/Landfill-stats.jpeg",
+  "https://reverenddaviddunbar.files.wordpress.com/2014/01/plastic-albatros.jpg"
+);
 
-  /* listen to the touchMove event,
-  every time it fires, grab the location
-  of touch and assign it to box */
-
-  box.addEventListener("touchmove", function(e) {
-    // grab the location of touch
-    var touchLocation = e.targetTouches[0];
-
-    // assign box new coordinates based on the touch.
-    box.style.left = touchLocation.pageX + "px";
-    box.style.top = touchLocation.pageY + "px";
-  });
-
-  /* record the position of the touch
-  when released using touchend event.
-  This will be the drop position. */
-
-  box.addEventListener("touchend", function(e) {
-    // current box position.
-    var x = parseInt(box.style.left);
-    var y = parseInt(box.style.top);
-  });
-};
+function randomImg() {
+  for (i = 0; i < disasters.length; i++) {
+    document
+      .querySelector(".disaster")
+      .setAttribute("src =" + randomImg[i] + '"');
+  }
+}
