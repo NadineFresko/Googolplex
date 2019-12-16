@@ -3,13 +3,13 @@ body {
   padding: 0;
 }
 #navwrapper{
-position: fixed;
-top: 0;
-width: 100%;
-height: 66px;
-padding: 20px 0 0 0;
-background-color: white;
-z-index: 50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 66px;
+  padding: 20px 0 0 0;
+  background-color: white;
+  z-index: 50;
 }
 .logo {
   width: 25px;
@@ -42,7 +42,7 @@ img {
   display: block;
 }
 /*========================================
-                   how
+how
 ========================================*/
 
 #howTo div {
@@ -60,11 +60,11 @@ tr td{
   padding: 0 auto;
 }
 /*========================================
-                contact
+contact
 ========================================*/
 /*========================================
-                contact
+contact
 ========================================*/
 /*========================================
-                contact
+contact
 ========================================*/
