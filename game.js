@@ -8,6 +8,7 @@ let dragged;
 
 function recycleStart(event) {
   dragged = event.target;
+  event.target.classList.add("grabbing");
 }
 function dragEnter(event) {
   if (
@@ -20,7 +21,7 @@ function dragEnter(event) {
     event.currentTarget.classList.add("open");
   } else {
     // wrong();
-    console.log("printingggggggggggggggggggggggggggg and stilllllllllllll");
+    check();
   }
 }
 
@@ -69,5 +70,9 @@ function recycling(event) {
 }
 
 /*=============================================
-                  MOVE AWAY
+                  MODAL 
 ==============================================*/
+
+function check() {
+  document.getElementById("modal-1").checked = true;
+}

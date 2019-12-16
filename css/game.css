@@ -28,8 +28,11 @@
   padding: 0;
   width: 120px;
   height: 130px;
-  cursor: pointer;
+  cursor: grab;
   border: none;
+}
+.waste .dragging {
+  cursor: grabbing;
 }
 .bins {
   display: flex;
@@ -70,6 +73,6 @@
   transform: rotateZ(0deg);
 }
 
-/* .bin.wrong-hover{
-    !!!!move away!!!!
-} */
+#modalbtn {
+  cursor: ;
+}
