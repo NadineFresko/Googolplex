@@ -31,8 +31,8 @@ img {
 }
 
 /*  ======================================================================================
-      postcord
-    ======================================================================================     */
+postcord
+======================================================================================     */
 
 .icon-Recycle:before,
 .guide--ajax-teaser .guide__title a:before,
@@ -57,10 +57,10 @@ body.page-search .thanks-message__rule--with-icon:before {
 }
 @media (min-width: 0.5em) {
   /* .m4-postcode-form {
-        padding-top: 4px;
-        padding-top: 2.8125rem;
-        padding-bottom: 45px;
-        padding-bottom: 2.8125rem; } */
+  padding-top: 4px;
+  padding-top: 2.8125rem;
+  padding-bottom: 45px;
+  padding-bottom: 2.8125rem; } */
 }
 .m4-postcode-form > div {
   margin: 0 20px;

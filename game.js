@@ -13,9 +13,9 @@ function recycleStart(event) {
 function dragEnter(event) {
   if (
     (dragged.classList.contains("recyclable") &&
-      event.currentTarget.classList.contains("recycleB")) ||
+    event.currentTarget.classList.contains("recycleB")) ||
     (dragged.classList.contains("general") &&
-      event.currentTarget.classList.contains("generalB"))
+    event.currentTarget.classList.contains("generalB"))
   ) {
     event.currentTarget.classList.add("bin-hover");
     event.currentTarget.classList.add("open");
@@ -70,7 +70,7 @@ function recycling(event) {
 }
 
 /*=============================================
-                  MODAL 
+MODAL
 ==============================================*/
 
 function check() {
@@ -84,7 +84,7 @@ function wrong() {
 }
 
 /*=============================================
-               MOBILE FRIENDLY 
+MOBILE FRIENDLY
 ==============================================*/
 
 window.onload = function() {
