@@ -1,9 +1,3 @@
-/*=================================================
-
-                WARNING DRY CODE!!
-
-=================================================*/
-
 let recyclable = document.querySelectorAll(".recyclable");
 let general = document.querySelectorAll(".general");
 
